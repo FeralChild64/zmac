@@ -236,6 +236,8 @@
  *		xh, xl, yh, yl, hx, lx, hy, ly alternates for ixh, ixy, iyh, iyl.
  *
  * gwp 21-1-24	%% expansion in macro to improve MRAS compatibility.
+ *
+ * rhs 28-1-26	Fix compilation errors reported by GCC 15.2.
  */
 
 #if defined(__GNUC__)
@@ -742,7 +744,7 @@ void putout(int value);
 int outrec;
 int outlen;
 unsigned char outbuf[1024 * 1024];
-void bookmark();
+void bookmark(int delay);
 void listfrombookmark();
 
 
@@ -5925,7 +5927,7 @@ int nextchar()
 {
 	int c, ch;
 	unsigned char *p;
-	char *getlocal();
+	char *getlocal(int c, int n);
 
 	if (peekc != NOPEEK) {
 		c = peekc;

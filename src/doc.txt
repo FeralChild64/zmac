@@ -1423,7 +1423,7 @@ Bruce Norskog originally wrote zmac in 1978.
 
 Updates and bugfixes over the years by John Providenza, Colin Kelley,
 and more recently by Russell Marks, Mark RISON, Chris Smith,
-Matthew Phillips and Tim Mann.
+Matthew Phillips, Tim Mann and Roman Standzikowski.
 
 Extensive modifications for cycle counting, multiple output formats,
 ".rel" output, 8080 mode and older assembler compatibilty were written
